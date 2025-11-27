@@ -1,0 +1,12 @@
+/* ========== BASE & COMMON ========== */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #f9fafb;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
