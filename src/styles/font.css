@@ -1,0 +1,24 @@
+Font dan Typography body {
+  font-family: "segoe UI", Arial, sans-serif;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #111;
+}
+
+p {
+  line-height: 1.7;
+  color: #555;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

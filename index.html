@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Learning Adaptif</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="/src/styles/common.css" />
+    <link rel="stylesheet" href="/src/styles/font.css" />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <link rel="stylesheet" href="/src/styles/responsive.css" />
+    <link rel="stylesheet" href="/src/styles/chat-widget.css" />
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- NAVBAR -->
+    <div id="navbar"></div>
+
+    <!-- POPUP LOGIN/REGISTER -->
+    <div class="popup-container" id="popup-container">
+      <div class="popup">
+        <button class="close-btn" id="closePopup">&times;</button>
+
+        <!-- LOGIN -->
+        <div class="form-box" id="loginForm">
+          <h2>Login</h2>
+          <form>
+            <div class="input-group">
+              <label>Email</label>
+              <input type="email" id="login-email" required />
+            </div>
+
+            <div class="input-group">
+              <label>Password</label>
+              <input type="password" id="login-password" required />
+            </div>
+
+            <button type="submit" class="btn btn-primary full">Login</button>
+
+            <p class="switch-text">
+              Belum punya akun?
+              <a href="#" id="toRegister">Daftar Sekarang</a>
+            </p>
+          </form>
+        </div>
+
+        <!-- REGISTER -->
+        <div class="form-box hidden" id="registerForm">
+          <h2>Register</h2>
+          <form>
+            <div class="input-group">
+              <label>Nama Lengkap</label>
+              <input type="text" id="register-name" required />
+            </div>
+
+            <div class="input-group">
+              <label>Email</label>
+              <input type="email" id="register-email" required />
+            </div>
+
+            <div class="input-group">
+              <label>Password</label>
+              <input type="password" id="register-password" required />
+            </div>
+
+            <button type="submit" class="btn btn-secondary full">
+              Register
+            </button>
+
+            <p class="switch-text">
+              Sudah punya akun?
+              <a href="#" id="toLogin">Masuk di sini</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE OUTPUT -->
+    <div id="app" class="page-transition min-h-screen pt-[90px]"></div>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <!-- MAIN SCRIPT -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
